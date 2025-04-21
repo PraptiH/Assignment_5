@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+
+<body class="bg-base-200 m-10">
+    <header>
+        <nav class="flex justify-between p-6 bg-white shadow-md rounded-2xl">
+            <div class="flex items-center gap-2">
+                <img src="assets/logo.png" alt="">
+                <p class="text-3xl">Dev<b>Board</b></p>
+            </div>
+            <div class="flex items-center gap-6 m">
+                <div class="flex items-center gap-4">
+                    <img src="assets/checkbox.png" alt="">
+                    <p class="text-2xl"><span style="font-weight:bold;">23</span></p>
+                </div>
+                <img src="assets/theme-btn.png" alt="">
+            </div>
+        </nav>
+    </header>
+
+    <section class="bg-white mt-10 border-2 gap-4">
+       <div class="flex flex-row gap-4 mt-5">
+         <!-- main div -->
+         <div>
+            <div class="p-2 flex justify-between gap-2 ">
+                <div class="flex items-center gap-4 bg-base-200 shadow-md rounded-2xl p-4">
+                 <!-- text assigned div -->
+                  <img class="rounded-full bg-white p-6" src="assets/checkbox.png" alt="">
+                 <div class="pr-3">
+                     <p class="font-medium text-md text-[#00303C]">Text Assigned <br></p>
+                     <p class="text-3xl font-bold"><span>05</span></p>
+                 </div>
+                </div>
+     
+             <div class="flex items-center gap-4 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA ] to-[#9BA8F8] shadow-md rounded-2xl p-4"><!--middle column-->
+                 <img src="assets/board.png" alt="">
+                 <p class="text-white font-medium text-2xl pr-12">Discover Something <br>New Today!</p>
+             </div> 
+     
+             <div class="flex items-center gap-4 bg-base-200 shadow-md rounded-2xl p-4">
+                 <!-- text assigned div -->
+                  <img class="rounded-full bg-white p-6" src="assets/checkbox.png" alt="">
+                 <div class="pr-3">
+                     <p class="font-regular text-xl text-[#00303C]">Wed,<br></p>
+                     <p class="text-xl font-bold"><span>July28 2025</span></p>
+                 </div>
+                </div>
+             </div>
+             
+             <!-- 2nd div of the main div -->
+            <div class="mt-10 p-2 grid grid-cols-3 gap-4">
+                <div class="bg-base-200 p-4 rounded-xl space-y-4">
+                    <p class="bg-white max-w-22 text-base text-[#00303C] shadow-sm rounded-sm p-2">ShopEase</p>
+                    <p class="text-[#00303C] font-medium text-2xl ">Fix Mobile Button Issue </p>
+                    <p class="bg-white text-base text-[#00303C] shadow-sm rounded-sm p-3">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly</p>
+                    <div class="flex items-center justify-between  ">
+                        <div>
+                            <p class="text-[#00303C text-sm]">Deadline <br></p>
+                            <p class="font-medium text-base text-[#00303C]">21 March 2025</p>
+                        </div>
+                        <button class="bg-[#3752FD] text-white p-2 rounded-lg">Completed</button>
+                    </div>
+                </div>
+                <div class="bg-base-200 p-4 rounded-xl space-y-4">
+                    <p class="bg-white max-w-22 text-base text-[#00303C] shadow-sm rounded-sm p-2">CloudSync</p>
+                    <p class="text-[#00303C] font-medium text-2xl ">Add Dark Mode</p>
+                    <p class="bg-white text-base text-[#00303C] shadow-sm rounded-sm p-3">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                    <div class="flex items-center justify-between  ">
+                        <div>
+                            <p class="text-[#00303C text-sm]">Deadline <br></p>
+                            <p class="font-medium text-base text-[#00303C]">21 March 2025</p>
+                        </div>
+                        <button class="bg-[#3752FD] text-white p-2 rounded-lg">Completed</button>
+                    </div>
+                </div>
+                <div class="bg-base-200 p-4 rounded-xl space-y-4">
+                    <p class="bg-white max-w-22 text-base text-[#00303C] shadow-sm rounded-sm p-2">SwiftPay</p>
+                    <p class="text-[#00303C] font-medium text-2xl ">Optimize Home Page</p>
+                    <p class="bg-white text-base text-[#00303C] shadow-sm rounded-sm p-3">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly</p>
+                    <div class="flex items-center justify-between  ">
+                        <div>
+                            <p class="text-[#00303C text-sm]">Deadline <br></p>
+                            <p class="font-medium text-base text-[#00303C]">21 March 2025</p>
+                        </div>
+                        <button class="bg-[#3752FD] text-white p-2 rounded-lg">Completed</button>
+                    </div>
+                </div>
+                <div class="bg-base-200 p-4 rounded-xl space-y-4">
+                    <p class="bg-white max-w-16 text-base text-[#00303C] shadow-sm rounded-sm p-2">Meta</p>
+                    <p class="text-[#00303C] font-medium text-2xl ">Add New emoji</p>
+                    <p class="bg-white text-base text-[#00303C] shadow-sm rounded-sm p-3">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly</p>
+                    <div class="flex items-center justify-between  ">
+                        <div>
+                            <p class="text-[#00303C text-sm]">Deadline <br></p>
+                            <p class="font-medium text-base text-[#00303C]">21 March 2025</p>
+                        </div>
+                        <button class="bg-[#3752FD] text-white p-2 rounded-lg">Completed</button>
+                    </div>
+                </div>
+                <div class="bg-base-200 p-4 rounded-xl space-y-4">
+                    <p class="bg-white max-w-24 text-base text-[#00303C] shadow-sm rounded-sm p-2">Google LLc</p>
+                    <p class="text-[#00303C] font-medium text-2xl ">Integrate OpenAI API  </p>
+                    <p class="bg-white text-base text-[#00303C] shadow-sm rounded-sm p-3">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly</p>
+                    <div class="flex items-center justify-between  ">
+                        <div>
+                            <p class="text-[#00303C text-sm]">Deadline <br></p>
+                            <p class="font-medium text-base text-[#00303C]">21 March 2025</p>
+                        </div>
+                        <button class="bg-[#3752FD] text-white p-2 rounded-lg">Completed</button>
+                    </div>
+                </div>
+                <div class="bg-base-200 p-4 rounded-xl space-y-4">
+                    <p class="bg-white max-w-22 text-base text-[#00303C] shadow-sm rounded-sm p-2">Glassdoar</p>
+                    <p class="text-[#00303C] font-medium text-2xl ">Improve Job searching  </p>
+                    <p class="bg-white text-base text-[#00303C] shadow-sm rounded-sm p-3">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly</p>
+                    <div class="flex items-center justify-between  ">
+                        <div>
+                            <p class="text-[#00303C text-sm]">Deadline <br></p>
+                            <p class="font-medium text-base text-[#00303C]">21 March 2025</p>
+                        </div>
+                        <button class="bg-[#3752FD] text-white p-2 rounded-lg">Completed</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- side div -->
+        <div class="w-3/5 shadow-md p-4 space-y-4  rounded-lg flex flex-col items-center pt-5 px-4">
+            <div class="flex gap-4">
+                <img src="assets/activity.png" alt="">
+                <p>Activity Log</p>
+            </div>
+            <button class="bg-[#3752FD] text-white rounded-sm p-2">Clear History</button>
+        </div>
+       </div>
+    </section>
+</body>
+
+</html>
