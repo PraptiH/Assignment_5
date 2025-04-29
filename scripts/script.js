@@ -1,10 +1,12 @@
 const buttons = document.querySelectorAll('.complete-btn');
-const btn1 =document.getElementById('btn-1')
-const btn2 =document.getElementById('btn-2')
-const btn3 =document.getElementById('btn-3')
-const btn4 =document.getElementById('btn-4')
-const btn5 =document.getElementById('btn-5')
-const btn6 =document.getElementById('btn-6')
+const btn1 =document.getElementById('btn-1');
+const btn2 =document.getElementById('btn-2');
+const btn3 =document.getElementById('btn-3');
+const btn4 =document.getElementById('btn-4');
+const btn5 =document.getElementById('btn-5');
+const btn6 =document.getElementById('btn-6');
+const btn7 =document.getElementById('btn-7')
+const activityLog = document.querySelectorAll('.activityLog');
 
 
 for(const btn of buttons){
@@ -49,9 +51,10 @@ for(const btn of buttons){
         if(btn==btn6){
             alert("Board Updated Succesfully");
             const activity6 = document.getElementById('activity6');
-            activity6.innerText = `You have completed the task Improve Job Searching ${time}`;
-            activity1.classList.remove('hidden');
+            activity6.innerText = `You have completed the task Improve Job Searching at ${time}`;
+            activity6.classList.remove('hidden');
         }
+
         if(convertedTextAssigned>0){
             const remaining = convertedTextAssigned - 1;
             const completed = convertedCompletedTask +1;
@@ -62,3 +65,13 @@ for(const btn of buttons){
     }
     )
 }
+
+btn7.addEventListener('click',function(){
+    for(const activity of activityLog){
+        if(activity.innerText!==''){
+            activity.innerText=''
+            activity.classList.add('hidden')
+        }
+    }
+})
+
