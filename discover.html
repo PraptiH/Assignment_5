@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+
+<body class="bg-base-200 m-10">
+    <header>
+        <nav class="flex justify-between p-6 bg-white shadow-md rounded-2xl">
+            <div class="flex items-center gap-2 justify-between">
+                <img src="assets/logo.png" alt="">
+                <p class="text-3xl">Dev<b>Board</b></p>
+            </div>
+            <button class="bg-blue-800 text-white rounded-2xl p-4 font-semibold text-xl">Back To Desk</button>
+        </nav>
+    </header>
+    <Section>
+        <p class="text-4xl font-bold text-center my-8">Blogs</p>
+        <div class="grid gap-y-4">
+            <div class="bg-white rounded-2xl p-8 m-2 space-y-8">
+                <h4 class="text-2xl font-bold">Question-1: What are the different ways to select an element in the DOM?
+                </h4>
+                <p class="text-gray-400 text-lg">Different ways to select an element in the DOM are <br>1.
+                    getElementrbyId </br> <br>2. getElementsByClassName </br> <br>3. getElementByTagName </br> <br>4. queryselector </br> <br>5.
+                    querySelectorAll</br></p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 m-2 space-y-8">
+                <h4 class="text-2xl font-bold">Question-2: What is the difference between innerHTML, innerText, and
+                    textContent ?</h4>
+                <p class="text-gray-400 text-lg">innerHTML returns all text, including html tags, that is contained by an element. <br>innerText returns all text contained by an element and all its child element. <br>textContent sets or returns the text content of any specified node and all its decendants.</p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 m-2 space-y-8">
+                <h4 class="text-2xl font-bold">Question-3: What is event delegation in the DOM?</h4>
+                <p class="text-gray-400 text-lg">When a parent element handles events for its child elements even if the children are added dynamically after the page loads.</p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 m-2 space-y-8">
+                <h4 class="text-2xl font-bold">Question-4: What is event bubbling in the DOM?</h4>
+                <p class="text-gray-400 text-lg">If the button "Back To Desk" clicked, it will take the user to another html page, its called event bubbling</p>
+            </div>
+            <div class="bg-white rounded-2xl p-8 m-2 space-y-8">
+                <h4 class="text-2xl font-bold">Question-5: How do you create, add, and remove elements using JavaScript?
+                </h4>
+                <p class="text-gray-400 text-lg">const create = document.createElement(' ') <br> const add = document.getElementById(' ').appendChild() <br> const remove = document.geElementById(' ').remove()</p>
+            </div>
+        </div>
+    </Section>
+</body>
+
+</html>
