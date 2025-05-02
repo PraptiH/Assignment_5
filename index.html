@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="scripts/script.js"></script>
     <title>Document</title>
 </head>
 
-<body class="bg-base-200 m-10">
+<body class="bg-base-200 m-10 p-20">
     <header>
         <nav class="flex justify-between p-6 bg-white shadow-md rounded-2xl">
             <div class="flex items-center gap-2">
@@ -42,15 +43,14 @@
      
              <div class="flex items-center gap-4 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA ] to-[#9BA8F8] shadow-md rounded-2xl p-4"><!--middle column-->
                  <img src="assets/board.png" alt="">
-                 <p class="text-white font-medium text-2xl pr-12">Discover Something <br>New Today!</p>
+                 <button id="discover-btn" class="text-white font-medium text-2xl pr-12">Discover Something <br>New Today!</button>
              </div> 
      
              <div class="flex items-center gap-4 bg-base-200 shadow-md rounded-2xl p-4">
                  <!-- text assigned div -->
                   <img class="rounded-3xl bg-white p-6" src="assets/calender.png" alt="">
                  <div class="pr-3">
-                     <p class="font-regular text-xl text-[#00303C]">Wed,<br></p>
-                     <p class="text-xl font-bold"><span>July28 2025</span></p>
+                     <p id="calendar" class="text-2xl font-bold text-[#00303C]"></p>
                  </div>
                 </div>
              </div>
@@ -68,6 +68,7 @@
                             <p class="font-medium text-base text-[#00303C]">21 March 2025</p>
                         </div>
                         <button id="btn-1" class="complete-btn bg-[#3752FD] text-white p-2 rounded-lg">Completed</button>
+                        <button id="btn-11" class="complete-btn bg-gray-400 text-gray-500 p-2 rounded-lg hidden">Completed</button>
                     </div>
                 </div>
                 <div class="bg-base-200 p-4 rounded-xl space-y-4">
@@ -155,7 +156,6 @@
        </div>
     </section>
 
-    <script src="scripts/script.js"></script>
 </body>
 
 </html>
