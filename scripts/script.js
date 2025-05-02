@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
     const buttons = document.querySelectorAll('.complete-btn');
     const btn1 = document.getElementById('btn-1');
     const btn2 = document.getElementById('btn-2');
@@ -88,7 +88,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
-    // Uncomment if you want to clear the activity logs with btn7
     btn7.addEventListener('click', function () {
         for (const activity of activityLog) {
             if (activity.innerText !== '') {
@@ -103,20 +102,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
    
-    // setInterval(() => {
-    //     const arr = ["bg-red-500", "bg-green-500", "bg-blue-500", "bg-amber-500", "bg-zinc-900"];
-    //     const rnd = Math.floor(Math.random() * arr.length);
-    //     const htmlElement = document.getElementsByTagName("html")[0];
-
-    //     for (const color of arr) {
-    //         if (htmlElement.classList.contains(color)) {
-    //             htmlElement.classList.remove(color);
-    //             break;
-    //         }
-    //     }
-
-    //     htmlElement.classList.add(arr[rnd]);
-    // }, 500);
+    document.getElementById("color-change-btn").addEventListener('click',function(){
+        const htmlElement = document.getElementsByTagName('html')[0];
+        const colors =["bg-red-500", "bg-green-500", "bg-blue-500", "bg-amber-500", "bg-zinc-900","bg-purple-500","bg-gray-500"]
+        for(let i=0; i<colors.length;i++){
+            if(htmlElement.classList.contains(colors[i])){
+                htmlElement.classList.remove(colors[i])
+                const next = colors[(i+1)%colors.length]
+                htmlElement.classList.add(next)
+                return
+            }
+        }
+        htmlElement.classList.add(colors[0])
+        
+    })
 
 
 });
