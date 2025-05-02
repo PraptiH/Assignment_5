@@ -16,14 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     document.getElementById('calendar').textContent = `${currentDate}`;
 
-    // document.getElementById("discover-btn").addEventListener('click', function () {
-    //     window.location.href = "./discover.html";
-    // });
-
-    // document.querySelector("get-back-btn").addEventListener("click", () => {
-    //     window.location.href = './index.html';
-    // });
-
 
     for (const btn of buttons) {
         btn.addEventListener('click', function () {
@@ -95,6 +87,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 activity.classList.add('hidden');
             }
         }
+    });
+
+    document.getElementById("discover-btn").addEventListener('click', function () {
+        window.location.href = "./discover.html";
     });
 
    
